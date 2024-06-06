@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgb(13, 77, 168);
+  border-radius: var(--border-radius);
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    &:not(:last-child) {
+      border-top: 1px solid rgb(17, 99, 213);
+    }
+  }
+}
